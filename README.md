@@ -3,7 +3,7 @@
 > endpoint : localhost:port/service/studentDetailsWsdl.wsdl
 
 ## Dependancy
-    <dependency>
+    		<dependency>
 			<groupId>wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
 		</dependency>
@@ -36,7 +36,7 @@
     </executions>
 </plugin>
 
-    <plugin>
+    			<plugin>
 				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<version>4.0.2</version>
