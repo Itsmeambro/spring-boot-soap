@@ -13,28 +13,28 @@
 > https://cxf.apache.org/docs/maven-cxf-codegen-plugin-wsdl-to-java.html
 
 # Code
-<plugin>
-    <groupId>org.apache.cxf</groupId>
-    <artifactId>cxf-codegen-plugin</artifactId>
-    <version>${cxf.version}</version>
-    <executions>
-        <execution>
-            <id>generate-sources</id>
-            <phase>generate-sources</phase>
-            <configuration>
-                <sourceRoot>${project.build.directory}/generated-sources/cxf</sourceRoot>
-                <wsdlOptions>
-                    <wsdlOption>
-                        <wsdl>${basedir}/src/main/resources/myService.wsdl</wsdl>
-                    </wsdlOption>
-                </wsdlOptions>
-            </configuration>
-            <goals>
-                <goal>wsdl2java</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
+	<plugin>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-codegen-plugin</artifactId>
+	    <version>${cxf.version}</version>
+	    <executions>
+	        <execution>
+	            <id>generate-sources</id>
+	            <phase>generate-sources</phase>
+	            <configuration>
+	                <sourceRoot>${project.build.directory}/generated-sources/cxf</sourceRoot>
+	                <wsdlOptions>
+	                    <wsdlOption>
+	                        <wsdl>${basedir}/src/main/resources/myService.wsdl</wsdl>
+	                    </wsdlOption>
+	                </wsdlOptions>
+	            </configuration>
+	            <goals>
+	                <goal>wsdl2java</goal>
+	            </goals>
+	        </execution>
+	    </executions>
+	</plugin>
 
     		<plugin>
 				<groupId>com.sun.xml.ws</groupId>
